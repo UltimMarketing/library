@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  	.schnyder-contenedor-tarjetas {
+    	display: flex;
+ 	   flex-wrap: wrap;
+  	  gap: 20px;
+	  }  
+  	.schnyder-tarjeta {
+	    width: 100%;
+  	  color: #A2A2A2;
+    	cursor: pointer;
+	    overflow: hidden;
+  	  transition: all 0.3s ease;
+    	font-family: poppins;
+	  }   
+	  .schnyder-tarjeta-cabecera {
+  	  display: flex;
+    	align-items: center;
+	    justify-content: center;
+  	  padding: 70px 0px 70px;
+    	color: #1C2B2D;
+	    border-top: 1px solid #1C2B2D;
+  	}  
+		.schnyder-tarjeta-one {
+			border-top: none;
+		}	
+		.schnyder-titulo-card{
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+		}
+		.schnyder-flecha{
+			display: none;
+		}
+		.schnyder-contenido-workers {
+			display: none;
+			padding: 44px 0px 96px 0px;
+			text-align: left;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.schnyder-text-contenido, .schnyder-list-injury {
+			font-family: "Poppins", Sans-serif;
+			font-size: 18px;
+			font-weight: 23px;
+			color: #1C2B2D;
+		}
+		.schnyder-list-injury li::before {
+			left: -14px;
+			font-size: 28px;
+			color: #26A84F;
+			top: -6px;
+		}
+		.schnyder-tarjeta.schnyder-expandida .schnyder-contenido-workers {
+			display: flex;
+			flex-direction: column;
+		}	
+		.schnyder-tarjeta.schnyder-expandida .schnyder-tarjeta-cabecera  {
+			color: #26A84F;
+			padding: 70px 0px 0px;
+		}
+		@media only screen and (max-width: 769px) {
+			.schnyder-tarjeta-cabecera {
+				padding: 55px 0px 55px;
+				justify-content: left;
+			}
+			.schnyder-titulo-card {
+				text-align: start;
+				padding-right: 10%;
+				font-size: 22px;
+				line-height: 25px;
+			}
+			.schnyder-contenido {
+				padding: 20px 39px 50px 5px;
+			}
+			.schnyder-text-contenido, .schnyder-list-injury {
+				font-size: 16px;
+			}
+			.schnyder-flecha{
+				display: block;
+				filter: invert(100%) grayscale(100%);
+				transform: rotate(180deg);
+			}
+		}
+  </style>
+</head>
+<body>
+  <div class="schnyder-contenedor-tarjetas">
+    <div class="schnyder-tarjeta tarjeta6">
+      <div class="schnyder-tarjeta-cabecera schnyder-tarjeta-one">
+        <h1 class="schnyder-titulo-card">What is workers’ compensation?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+      <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="schnyder-text-contenido">Workers’ compensation is a form of insurance that provides medical benefits and wage replacement to employees injured in the course of employment. It is designed to help workers recover from injuries and return to work while protecting employers from lawsuits.</p>
+      </div>
+    </div>
+    <div class="schnyder-tarjeta tarjeta1">
+			<div class="schnyder-tarjeta-cabecera">
+				<h1 class="schnyder-titulo-card">Who is eligible for workers’ compensation?</h1>
+				<img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+			</div>
+			<div class="schnyder-contenido-workers">
+				<!-- Contenido de la tarjeta -->
+				<p class="schnyder-text-contenido">Most employees in the United States are covered by workers’ compensation insurance. This includes full-time, part-time, seasonal, and, in some cases, even temporary workers. Independent contractors and volunteers may not be eligible, as coverage varies by state laws and company policies.</p>
+			</div>
+		</div>
+    <!-- Repetir para más tarjetas según sea necesario -->
+    <div class="schnyder-tarjeta tarjeta3">
+      <div class="schnyder-tarjeta-cabecera">
+        <h1 class="schnyder-titulo-card">What types of injuries are covered under workers’ compensation?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+      <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+      </div>
+    </div>
+    <!-- Repetir para más tarjetas según sea necesario -->
+    <div class="schnyder-tarjeta tarjeta4">
+      <div class="schnyder-tarjeta-cabecera">
+        <h1 class="schnyder-titulo-card">How do I file a workers’ compensation claim?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+      <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+      </div>
+    </div>
+    <!-- Repetir para más tarjetas según sea necesario -->
+    <div class="schnyder-tarjeta tarjeta5">
+      <div class="schnyder-tarjeta-cabecera">
+        <h1 class="schnyder-titulo-card">What benefits can I receive from workers’ compensation?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+	    <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+      </div>
+    </div>
+    <div class="schnyder-tarjeta tarjeta5">
+      <div class="schnyder-tarjeta-cabecera">
+        <h1 class="schnyder-titulo-card">Can I see my own doctor for a workers’ compensation injury?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+      <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+      </div>
+    </div>
+    <div class="schnyder-tarjeta tarjeta5">
+      <div class="schnyder-tarjeta-cabecera">
+        <h1 class="schnyder-titulo-card">What should I do if my workers’ compensation claim is denied?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+      <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+          <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+      </div>
+    </div>
+    <div class="schnyder-tarjeta tarjeta5">
+      <div class="schnyder-tarjeta-cabecera">
+        <h1 class="schnyder-titulo-card">Do I need a lawyer to file a workers’ compensation claim?</h1>
+        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+      </div>
+      <div class="schnyder-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.schnyder-tarjeta').forEach(function(tarjeta) {
+      tarjeta.addEventListener('click', function() {
+        this.classList.toggle('schnyder-expandida');
+        var flecha = this.querySelector('.schnyder-flecha');
+        if (this.classList.contains('schnyder-expandida')) {
+          flecha.src = 'http://165.227.75.136/wp-content/uploads/2024/08/Path-128.png'; // Flecha hacia arriba
+        } else {
+          flecha.src = 'http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png'; // Flecha original
+        }
+      });
+    });
+  </script>
+  <script>
+    window.onload = function() {
+      const imagen = document.getElementById('schnyder-image-number');
+      const contenedor = document.querySelector('.schnyder-box-image_number');
+      // Ajusta la imagen para que tome su tamaño original
+      schnyder-image-number.style.width = schnyder-image-number.naturalWidth + 'px';
+    };
+  </script>
+</body>
+</html>
