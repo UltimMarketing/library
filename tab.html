@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<style>
+		#lp-code-257 {
+			background: #F7F7F7;
+		}
+		.dominguez-location-section {
+			display: flex;
+		}
+		.tabs {
+			width: 35%;
+			padding-top: 50px;
+		}
+		.dominguez-title-maps {
+			font-weight: 700;
+			font-style: italic;
+			font-family: Poppins;
+			font-size: 40px;
+			color: rgb(0, 67, 250);
+			line-height: 50px;
+		}
+		.tab {
+			border-bottom: 1px solid #AFAEAF;
+			padding: 10px 0px 5px;
+			margin-right: 70px;
+			cursor: pointer; 
+		}
+		.dominguez-address {
+			font-family: 'Poppins';
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 27px;
+			font-style: italic;
+			color: #AFAEAF;
+		}
+		.dominguez-address-map {
+			font-family: 'Poppins';
+			font-size: 12px;
+			font-weight: 700;
+			font-style: italic;
+			line-height: 21px;
+			color: #AFAEAF;
+		}
+		.maps {
+			width: 65%;
+		}
+		.tab-content {
+			display: none;
+		}
+		.tab-content.actives {
+			display: flex;
+			justify-content: center;
+			padding: 50px;
+		}
+		.tab:hover .dominguez-address, .tab:hover .dominguez-address-map {
+			color: #021323; /* Cambiar el color del texto al pasar el mouse */
+		}
+	</style>
+</head>
+<body>
+	<div class="dominguez-location-section">
+  	<div class="tabs">
+    	<h3 class="dominguez-title-maps">NUESTRAS</br>UBICACIONES</h3>
+  		<div class="tab" data-map="map1">
+      	<p class="dominguez-address">Agende una cita en Marietta!</p>
+      	<p class="dominguez-address-map">2468 Windy Hill Rd Ste 400, Marietta, GA 30067<p/>
+  		</div>
+	  	<div class="tab" data-map="map2">
+  	    <p class="dominguez-address">Agende una cita en Doraville!</p>
+    	  <p class="dominguez-address-map">5725 Buford Hwy NE #101, Doraville, GA 30340<p/>
+	  	</div>
+  		<div class="tab" data-map="map3">
+    	  <p class="dominguez-address">Agende una cita en Lawrenceville!</p>
+      	<p class="dominguez-address-map">4850 Sugarloaf Pkwy #902, Lawrenceville, GA 30044<p/>
+	  	</div>
+  		<div class="tab" data-map="map4">
+    	  <p class="dominguez-address">Agende una cita en Gainesville!</p>
+      	<p class="dominguez-address-map">1500 Browns Bridge Rd, Gainesville, GA 30501<p/>
+	  	</div>
+  		<div class="tab" data-map="map5">
+    	  <p class="dominguez-address">Agende una cita en Decatur!</p>
+      	<p class="dominguez-address-map">1376 Church St #150, Decatur, GA 30030<p/>
+  		</div>
+  		<div class="tab" data-map="map6">
+      	<p class="dominguez-address">Agende una cita en Jonesboro!</p>
+	      <p class="dominguez-address-map">6346 Tara Blvd, Jonesboro, GA 30236<p/>
+  		</div>
+  		<div class="tab" data-map="map7">
+      	<p class="dominguez-address">Agende una cita en Loganville!</p>
+	      <p class="dominguez-address-map">4665 Atlanta Hwy suite 200, Loganville, GA 30052<p/>
+  		</div>
+  	</div>
+  	<div class="maps">
+	    <div id="map1" class="tab-content">
+  	    <a href="https://maps.app.goo.gl/bEciAWWjoStFmUBM7" target="_blank">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/bab900c2-dominguez-marietta-1_1000000000000000000028.png">
+        </a>
+  		</div>
+  		<div id="map2" class="tab-content">
+      	<a href="https://maps.app.goo.gl/Q7EYTQ8Srw9HrzK48" target="_blank">
+          <img src=https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/c678d565-dominguez-doraville-1_1000000000000000000028.png>
+        </a>
+	  	</div>
+  		<div id="map3" class="tab-content">
+    	  <a href="https://maps.app.goo.gl/cByw76yMGFT2km1j6" target="_blank">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/70eb51a0-dominguez-lawrenceville-1_1000000000000000000028.png">
+        </a>
+  		</div>
+	  	<div id="map4" class="tab-content">
+  	    <a href="https://maps.app.goo.gl/6TLco9WV1oV1po5i8" target="_blank">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/6c27113b-dominguez-gainesville-1_1000000000000000000028.png">
+        </a>
+    	</div>
+	  	<div id="map5" class="tab-content">
+  	    <a href="https://maps.app.goo.gl/6Aye5Hwp25NtDuFd7" target="_blank">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/91edc018-dominguez-decatur-1_1000000000000000000028.png">
+        </a>
+  		</div>
+	  	<div id="map6" class="tab-content">
+  	    <a href="https://maps.app.goo.gl/JWjE2J7jXfriiBDn6" target="_blank">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/25151a95-dominguez-jonesboro-1_1000000000000000000028.png">
+        </a>
+  		</div>
+	  	<div id="map7" class="tab-content">
+  	    <a href="https://maps.app.goo.gl/6fLD6ps5gEHXGzCN6" target="_blank">
+          <img src="https://d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/newhome/4cae4398-dominguez-loganville-1_1000000000000000000028.png">
+        </a>
+  		</div>
+  	</div>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const tabs = document.querySelectorAll('.tab');
+			const contents = document.querySelectorAll('.tab-content');
+
+			if (tabs.length === 0 || contents.length === 0) {
+				console.error("No se encontraron elementos con la clase .tab o .tab-content en el DOM.");
+				return;
+			}
+
+			tabs.forEach(tab => {
+				tab.addEventListener('click', function() {
+					const mapId = this.getAttribute('data-map');
+					const targetContent = document.getElementById(mapId);
+
+					if (!targetContent) {
+						console.error(`No se encontró ningún elemento con el ID ${mapId}`);
+						return;
+					}
+
+					contents.forEach(content => {
+						content.classList.remove('actives');
+					});
+
+					tabs.forEach(t => t.classList.remove('active'));
+
+					targetContent.classList.add('actives');
+					this.classList.add('active');
+				});
+			});
+
+			// Activar el primer mapa por defecto
+			if (contents.length > 0) {
+				contents[0].classList.add('actives');
+				tabs[0].classList.add('active');
+			}
+		});
+	</script>
+</body>
+</html>
