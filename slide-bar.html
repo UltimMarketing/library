@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<style>
+		#box18 {
+    	width: 320px;
+    	overflow: hidden;
+    	position: relative;
+    	cursor: grab;
+		}
+		#box18:active {
+    	cursor: grabbing;
+		}
+		.slider-wrapper {
+    	display: flex;
+    	transition: transform 0.5s ease;
+		}
+		.slider-images {
+   		display: flex;
+    	gap: 20px;
+		}
+		.slider-images img {
+    	width: 149px;
+	  	height: auto;
+  	  user-select: none;
+    	pointer-events: none;
+	    border-radius: 5%;
+		}
+		.progress-bar {
+    	width: 100%;
+	    height: 10px;
+  	  background-color: #80a1fd;
+    	border-radius: 5px;
+	    margin-top: 25px;
+  	  position: relative;
+		}
+		.indicator {
+    	height: 100%;
+	    width: 50px;
+  	  background-color: #FFFFFF;
+    	border-radius: 5px;
+	    position: absolute;
+  	  left: 0;
+    	transition: left 0.5s ease;
+		}
+	</style>
+</head>
+<body>
+  <div id="box18" class="slider-container">
+    <div class="slider-wrapper">
+      <div class="slider-images">
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/fbb70dde-back-neck-pain_1000000000000000000028.png" alt="Dolor de espalda y cuello" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/fbb70dde-back-neck-pain_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/fbb70dde-back-neck-pain_1000000000000000000028.png" srcset="">
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/9cb793ae-herniated-disc_1000000000000000000028.png" alt="Hernia discal" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/9cb793ae-herniated-disc_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/9cb793ae-herniated-disc_1000000000000000000028.png" srcset=""> 
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/aab39aab-whiplash_1000000000000000000028.png" alt="Latigazo" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/aab39aab-whiplash_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/aab39aab-whiplash_1000000000000000000028.png" srcset="">  
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/d90b34de-spinal-cord-injuries_1000000000000000000028.png" alt="Lesiones medulares" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/d90b34de-spinal-cord-injuries_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/d90b34de-spinal-cord-injuries_1000000000000000000028.png" srcset="">  
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/5d409c97-sciatica_1000000000000000000028.png" alt="Ciática" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/5d409c97-sciatica_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/5d409c97-sciatica_1000000000000000000028.png" srcset="">  
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/d049d322-nerve-damage_1000000000000000000028.png" alt="Lesiones de nervios" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/d049d322-nerve-damage_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/d049d322-nerve-damage_1000000000000000000028.png" srcset="">  
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/927cd3ba-limited-range-of-motion_1000000000000000000028.png" alt="Rangos de movimientos limitados" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/927cd3ba-limited-range-of-motion_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/927cd3ba-limited-range-of-motion_1000000000000000000028.png" srcset="">  
+        <img src="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/2b4c473a-muscle-and-joint-problems_1000000000000000000028.png" alt="Problemas musculares y de articuladiones" data-src-desktop-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/2b4c473a-muscle-and-joint-problems_1000000000000000000028.png" data-src-mobile-1x="//d9hhrg4mnvzow.cloudfront.net/dominguezchiropractic.com/inicio/2b4c473a-muscle-and-joint-problems_1000000000000000000028.png" srcset=""> 
+      </div>
+    </div>
+    <div class="progress-bar">
+      <div class="indicator"></div>
+    </div>
+  </div>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+    	const slider = document.querySelector('#box18');
+    	const sliderImages = document.querySelector('.slider-images');
+    	const indicator = document.querySelector('.progress-bar .indicator');
+    	let isDown = false;
+    	let startX;
+    	let scrollLeft;
+    	
+			const startDragging = (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX || e.touches[0].pageX;
+        scrollLeft = sliderImages.style.transform ? parseInt(sliderImages.style.transform.replace('translateX(', '').replace('px)', '')) : 0;
+    	};
+
+    	const stopDragging = () => {
+        isDown = false;
+        slider.classList.remove('active');
+    	};
+
+    	const drag = (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX || e.touches[0].pageX;
+        const walk = (x - startX) * 1.5; // Speed
+        let newScrollLeft = scrollLeft + walk;
+
+        // Prevent scrolling past the first image
+        if (newScrollLeft > 0) {
+            newScrollLeft = 0;
+        }
+
+        // Prevent scrolling past the last image
+        const imageWidth = sliderImages.children[0].offsetWidth + 18; // 20 is the gap
+        const maxScroll = (sliderImages.children.length * imageWidth) - slider.offsetWidth;
+
+        if (newScrollLeft < -maxScroll) {
+            newScrollLeft = -maxScroll;
+        }
+
+        sliderImages.style.transform = `translateX(${newScrollLeft}px)`;
+        updateIndicator(newScrollLeft, maxScroll);
+    	};
+
+    	const updateIndicator = (newScrollLeft, maxScroll) => {
+        const percentage = Math.abs(newScrollLeft) / maxScroll;
+        const indicatorMaxLeft = slider.offsetWidth - indicator.offsetWidth;
+        indicator.style.left = `${percentage * indicatorMaxLeft}px`;
+    	};
+
+    	slider.addEventListener('mousedown', startDragging);
+	    slider.addEventListener('touchstart', startDragging);
+
+  	  slider.addEventListener('mouseleave', stopDragging);
+    	slider.addEventListener('mouseup', stopDragging);
+	    slider.addEventListener('touchend', stopDragging);
+
+  	  slider.addEventListener('mousemove', drag);
+    	slider.addEventListener('touchmove', drag);
+		});
+	</script>
+</body>
+</html>
