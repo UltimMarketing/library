@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-  	.schnyder-contenedor-tarjetas {
+  	.gwinnett-contenedor-tarjetas {
     	display: flex;
  	   flex-wrap: wrap;
-  	  gap: 20px;
 	  }  
-  	.schnyder-tarjeta {
+  	.gwinnett-tarjeta {
 	    width: 100%;
   	  color: #A2A2A2;
     	cursor: pointer;
@@ -18,182 +17,736 @@
   	  transition: all 0.3s ease;
     	font-family: poppins;
 	  }   
-	  .schnyder-tarjeta-cabecera {
+	  .gwinnett-tarjeta-cabecera {
   	  display: flex;
     	align-items: center;
 	    justify-content: center;
-  	  padding: 70px 0px 70px;
     	color: #1C2B2D;
-	    border-top: 1px solid #1C2B2D;
+	    border-top: 4px solid #EAEAEA;
+      height: 115px;
   	}  
-		.schnyder-tarjeta-one {
+		.gwinnett-tarjeta-one {
 			border-top: none;
 		}	
-		.schnyder-titulo-card{
-			font-size: 30px;
-			font-weight: bold;
-			text-align: center;
+		.gwinnett-titulo-card{
+			font-size: 24px;
+			font-weight: 600;
+			text-align: left;
+      width: 90%;
+      color: #101926;
 		}
-		.schnyder-flecha{
+		.gwinnett-contenido-workers {
 			display: none;
-		}
-		.schnyder-contenido-workers {
-			display: none;
-			padding: 44px 0px 96px 0px;
+			padding: 41px 0px 50px 0px;
 			text-align: left;
 			margin-left: auto;
 			margin-right: auto;
 		}
-		.schnyder-text-contenido, .schnyder-list-injury {
+		.gwinnett-text-contenido, .gwinnett-list-injury {
 			font-family: "Poppins", Sans-serif;
-			font-size: 18px;
-			font-weight: 23px;
-			color: #1C2B2D;
+			font-size: 21px;
+			color: #101926;
+      font-weight: 500;
+      width: 80%;
 		}
-		.schnyder-list-injury li::before {
+		.gwinnett-list-injury li::before {
 			left: -14px;
 			font-size: 28px;
 			color: #26A84F;
 			top: -6px;
 		}
-		.schnyder-tarjeta.schnyder-expandida .schnyder-contenido-workers {
+		.gwinnett-tarjeta.gwinnett-expandida .gwinnett-contenido-workers {
 			display: flex;
 			flex-direction: column;
-		}	
-		.schnyder-tarjeta.schnyder-expandida .schnyder-tarjeta-cabecera  {
-			color: #26A84F;
-			padding: 70px 0px 0px;
 		}
+    .gwinnett-box-nameplane {
+      width: 40%;
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    .gwinnet-box-blue {
+      background: #E6F6FF;
+    }
+    .gwinnett-box-plan {
+      width: 20%;
+      display: flex;
+      height: 100%;
+      align-items: center;
+    }
+    .gwinnett-box-plan img {
+      margin: 0 auto;
+      
+    }
+    .gwinnett-box-arrow {
+      align-self: center;
+    }
 		@media only screen and (max-width: 769px) {
-			.schnyder-tarjeta-cabecera {
-				padding: 55px 0px 55px;
+			.gwinnett-tarjeta-cabecera {
 				justify-content: left;
 			}
-			.schnyder-titulo-card {
+			.gwinnett-titulo-card {
 				text-align: start;
 				padding-right: 10%;
 				font-size: 22px;
 				line-height: 25px;
 			}
-			.schnyder-contenido {
+			.gwinnett-contenido {
 				padding: 20px 39px 50px 5px;
 			}
-			.schnyder-text-contenido, .schnyder-list-injury {
+			.gwinnett-text-contenido, .gwinnett-list-injury {
 				font-size: 16px;
-			}
-			.schnyder-flecha{
-				display: block;
-				filter: invert(100%) grayscale(100%);
-				transform: rotate(180deg);
 			}
 		}
   </style>
 </head>
 <body>
-  <div class="schnyder-contenedor-tarjetas">
-    <div class="schnyder-tarjeta tarjeta6">
-      <div class="schnyder-tarjeta-cabecera schnyder-tarjeta-one">
-        <h1 class="schnyder-titulo-card">What is workers’ compensation?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+  <div class="gwinnett-contenedor-tarjetas">
+    <div class="gwinnett-tarjeta tarjeta6">
+      <div class="gwinnett-tarjeta-cabecera gwinnett-tarjeta-one">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">501Connect Attendance</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-      <div class="schnyder-contenido-workers">
+      <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-        <p class="schnyder-text-contenido">Workers’ compensation is a form of insurance that provides medical benefits and wage replacement to employees injured in the course of employment. It is designed to help workers recover from injuries and return to work while protecting employers from lawsuits.</p>
+        <p class="gwinnett-text-contenido">501Connect is greater Gwinnett’s networking event for the nonprofit community. In addition to forming connections within the industry, each event also aligns attendees with external sectors to foster synergy.</p>
       </div>
     </div>
-    <div class="schnyder-tarjeta tarjeta1">
-			<div class="schnyder-tarjeta-cabecera">
-				<h1 class="schnyder-titulo-card">Who is eligible for workers’ compensation?</h1>
-				<img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta1">
+			<div class="gwinnett-tarjeta-cabecera">
+				<div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Activate Assimilation</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>       
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
 			</div>
-			<div class="schnyder-contenido-workers">
+			<div class="gwinnett-contenido-workers">
 				<!-- Contenido de la tarjeta -->
-				<p class="schnyder-text-contenido">Most employees in the United States are covered by workers’ compensation insurance. This includes full-time, part-time, seasonal, and, in some cases, even temporary workers. Independent contractors and volunteers may not be eligible, as coverage varies by state laws and company policies.</p>
+				<p class="gwinnett-text-contenido">Engagement with the GNC provides a plethora of resources. To assist you in accessing all that your membership offers, a complimentary onboarding event, Activate, is provided. And, you’ll be in good company, as the event also provides the opportunity to connect with other new members.</p>
 			</div>
 		</div>
     <!-- Repetir para más tarjetas según sea necesario -->
-    <div class="schnyder-tarjeta tarjeta3">
-      <div class="schnyder-tarjeta-cabecera">
-        <h1 class="schnyder-titulo-card">What types of injuries are covered under workers’ compensation?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta3">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Advocacy & Alignment</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-      <div class="schnyder-contenido-workers">
+      <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+        <p class="gwinnett-text-contenido">Nonprofits play a crucial role in our community, by providing critical services that fill gaps and contribute to economic mobility. With a position of influence, GNC is poised to champion your cause and amplify your impact. </p>
       </div>
     </div>
     <!-- Repetir para más tarjetas según sea necesario -->
-    <div class="schnyder-tarjeta tarjeta4">
-      <div class="schnyder-tarjeta-cabecera">
-        <h1 class="schnyder-titulo-card">How do I file a workers’ compensation claim?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta4">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Affiliations Access</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-      <div class="schnyder-contenido-workers">
+      <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+        <p class="gwinnett-text-contenido">Through your affiliation with GNC, additional avenues are unlocked. Access to course work and knowledge centers are provided to the Council of Volunteer Administrators, Georgia Association for Volunteer Administration, National Council of Nonprofits and SCORE.</p>
       </div>
     </div>
     <!-- Repetir para más tarjetas según sea necesario -->
-    <div class="schnyder-tarjeta tarjeta5">
-      <div class="schnyder-tarjeta-cabecera">
-        <h1 class="schnyder-titulo-card">What benefits can I receive from workers’ compensation?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Board Builder</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-	    <div class="schnyder-contenido-workers">
+	    <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+        <p class="gwinnett-text-contenido">Serving as a steward of sustainably, boards play a crucial role in nonprofit organizations. Board Builder is an online platform for nonprofits to post available openings for their board of directors. Alignment is promoted through the Gwinnett Coalition’s expansive network.</p>
       </div>
     </div>
-    <div class="schnyder-tarjeta tarjeta5">
-      <div class="schnyder-tarjeta-cabecera">
-        <h1 class="schnyder-titulo-card">Can I see my own doctor for a workers’ compensation injury?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Candid Community</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-      <div class="schnyder-contenido-workers">
+      <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+        <p class="gwinnett-text-contenido">Formerly known as the Foundation Center and GuideStar, Candid Community combines both resources. As the GNC is a local partner, you can access the platform in person at our office. </p>
       </div>
     </div>
-    <div class="schnyder-tarjeta tarjeta5">
-      <div class="schnyder-tarjeta-cabecera">
-        <h1 class="schnyder-titulo-card">What should I do if my workers’ compensation claim is denied?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Career Connect</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-      <div class="schnyder-contenido-workers">
+      <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-          <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+          <p class="gwinnett-text-contenido">Recruiting talent is a top need for nonprofits. Career Connect is an online platform that features open positions in the nonprofit industry. Opportunities are promoted through the Gwinnett Coalition’s expansive network.</p>
       </div>
     </div>
-    <div class="schnyder-tarjeta tarjeta5">
-      <div class="schnyder-tarjeta-cabecera">
-        <h1 class="schnyder-titulo-card">Do I need a lawyer to file a workers’ compensation claim?</h1>
-        <img src="http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png" alt="Expandir" class="schnyder-flecha">
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Cause Coordinate</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
       </div>
-      <div class="schnyder-contenido-workers">
+      <div class="gwinnett-contenido-workers">
         <!-- Contenido de la tarjeta -->
-        <p class="schnyder-text-contenido">After a slip and fall accident, you should:</p>
+        <p class="gwinnett-text-contenido">By handling specific projects, volunteers can help expand the capacity of the nonprofit. Cause Coordinate is an online platform where nonprofits can promote their project-based volunteer opportunities. Opportunities are promoted through the Gwinnett Coalition’s expansive network.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">(c)Social</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Where the nonprofit C-Suite convene, (c)Social provides a private networking opportunity for executive level NPOs. A curated gathering, the guest list provides an intimate opportunity to connect with elevated attendees from external sectors.</p>
+      </div>
+    </div><div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Elected Officials List</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Elected officials play a key role in enacting policies that impact nonprofits in a variety of ways. Building relationships with lawmakers can have a significant impact on a nonprofit’s ability to fulfill its mission. GNC provides elected officials contract information, so you can advocate for your cause.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Exec Connect</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Our Circles Roundtables provide nonprofit leaders with the platform to convene in confidence. Through a network of like-minded peers, the program encourages open dialogue, leading to collaborative learning and creative solutions. Exec Connect is comprised of CEOs & Executive Directors (size specific) charged with leading their organizations.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Facility Usage</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">A space to convene and collaborate, GNC is excited to offer its recently renovated office as a secondary meeting space for members. In addition to two private offices, we also have two conference rooms available for your use with an appointment.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Founders Forum</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Scaling a nonprofit is heart work. And mindset matters as much as skillset. At this inspirational event, you will hear from actual nonprofit founders. The panel discussion will include those who started with a passion and have obtained success in the space.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Funding Partnerships</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Funding partnerships leverage the contributions of multiple nonprofits to make progress towards a shared goal. Through collaboration, our nonprofit community can be more competitive in the federal funding space. GNC’s grant writer sources and facilitates these funding opportunities.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Grant Calendar</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">We’ve all heard the saying, time is money. As a nonprofit, researching resources can be quite cumbersome. Based on member priorities, our curated grant calendar cuts down on the preliminary sourcing, so you can focus on preparing your proposal.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Grant Ready Assessment</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">With a subject-matter expert on staff, the Grant Specialist will meet with members to assess how grant ready the organization is. The nonprofit will be evaluated based on organizational, operational, financial, and programmatic preparedness. A rating will measure the nonprofits’ potential success in securing grants, in addition to connection to resources for further refinement.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Grant Writer Review</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">The most seasoned nonprofits report a benchmark of 1 in 10 grants that receive awards. Proper positioning when submitting a proposal is paramount to success. Based on your organization’s grant ready assessment score, GNC’s grant specialist will review your grants and make recommendations.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Industry Insights</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Through its affiliation with the National Council of Nonprofits (NCN), GNC members are tapped to provide data. Information produced identifies emerging trends, shares proven practices, and promotes solutions. Our relationship with NCN is circular and is a feedback loop that funnels industry information back to you.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">L&D Series</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Knowledge is power. Through GNC’s industry specific educational events, members can sharpen their skills in pertinent areas such as: board & volunteers, finance & funding, human resources, marketing & communications, operations & management, and more.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Legislative Advisory Council</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">In its initial year, the Legislative Advisory Council will inform the GNC of nonprofit specific priorities it should consider. Additionally, special speakers will consist of nonprofit minded policy makers. Future facing, feedback will influence the structure of GNC’s advocacy efforts.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Lobbying Lunch & Learn</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Lobbying by nonprofits is legal and encouraged by Congress. It is a powerful tool that can foster civic participation that results in stronger public policy. Learn how to get involved in the policymaking process at our lobbying events.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Masterclass Series</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">At this advanced event, the GNC will team up with professionals in the nonprofit support space. This extended workshop is an expanded deep dive of the L&D Series and will provide knowledge on subject matters important to nonprofits.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Member Events Calendar</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Events provide a platform to produce revenue that supports your mission. The GNC website provides a space to post your programs that enhances their exposure. Whether it is an annual gala, fundraising drive or 5K race, you have a place to promote for increased impact.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Member Promotion Kit</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Membership in an association builds credibility. It demonstrates your commitment to the industry. To showcase your support, GNC provides a promotion kit that includes ready-to-use copy and graphics.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Nonprofit Directory</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <p class="gwinnett-titulo-card" style="text-align: center; font-weight: 500;">Enhanced</p>
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Gwinnett’s first nonprofit directory is a comprehensive database that provides a platform for connectivity. Inside the sector, this easily searchable guide reduces service duplication. Outside the sector, this is a tool that other industries can use when sourcing nonprofits to support.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Nonprofit Newsletter</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">A monthly communication, the Nonprofit Newsletter is packed with information and insights relevant to running your nonprofit.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Prep Your Proposal Program</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">The Prep Your Proposal (PYP) Program provides a guided overview of top grants. Held digitally, for playback purposes, pertinent information is presented, in addition to an opportunity for Q&A.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Public Policy Symposium</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnet-start.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">At this action-packed event, the Gwinnett Coalition will provide a forum for nonprofits to connect with local, state, and federal elected officials. In addition, it will curate a conversation on trends and policy issues impacting the industry with the National Council of Nonprofits.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Rise Roundtable</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Our Circles Roundtables provide nonprofit leaders with the platform to convene in confidence. Through a network of like-minded peers, the program encourages open dialogue, leading to collaborative learning and creative solutions. Rise Roundtable is for young professionals and is open to emerging leaders at any stage within their organization.</p>
+      </div>
+    </div>
+    <div class="gwinnett-tarjeta tarjeta5">
+      <div class="gwinnett-tarjeta-cabecera">
+        <div class="gwinnett-box-nameplane">
+          <h1 class="gwinnett-titulo-card">Speakers Bureau</h1>
+          <div class="gwinnett-box-arrow">
+            <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png" alt="Expandir" class="gwinnett-flecha">
+          </div>
+        </div>
+        <div class="gwinnett-box-plan gwinnet-box-blue"></div>
+        <div class="gwinnett-box-plan"></div>
+        <div class="gwinnett-box-plan">
+          <img src="https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-check.webp">
+        </div>
+      </div>
+      <div class="gwinnett-contenido-workers">
+        <!-- Contenido de la tarjeta -->
+        <p class="gwinnett-text-contenido">Civic and corporate partners alike are interested in leveraging partnerships to impact the community. Inclusion in our Speakers’ Bureau identifies leading nonprofits who are doing good in greater Gwinnett.</p>
       </div>
     </div>
   </div>
   <script>
-    document.querySelectorAll('.schnyder-tarjeta').forEach(function(tarjeta) {
+    document.querySelectorAll('.gwinnett-tarjeta').forEach(function(tarjeta) {
       tarjeta.addEventListener('click', function() {
-        this.classList.toggle('schnyder-expandida');
-        var flecha = this.querySelector('.schnyder-flecha');
-        if (this.classList.contains('schnyder-expandida')) {
-          flecha.src = 'http://165.227.75.136/wp-content/uploads/2024/08/Path-128.png'; // Flecha hacia arriba
+        this.classList.toggle('gwinnett-expandida');
+        var flecha = this.querySelector('.gwinnett-flecha');
+        if (this.classList.contains('gwinnett-expandida')) {
+          flecha.src = 'https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow.png'; // Flecha hacia arriba
         } else {
-          flecha.src = 'http://165.227.75.136/wp-content/uploads/2024/08/Path-128-1.png'; // Flecha original
+          flecha.src = 'https://gwinnettcoalition.org/wp-content/uploads/2024/10/gwinnett-arrow-down.png';
+           // Flecha original
         }
       });
     });
   </script>
   <script>
     window.onload = function() {
-      const imagen = document.getElementById('schnyder-image-number');
-      const contenedor = document.querySelector('.schnyder-box-image_number');
+      const imagen = document.getElementById('gwinnett-image-number');
+      const contenedor = document.querySelector('.gwinnett-box-image_number');
       // Ajusta la imagen para que tome su tamaño original
-      schnyder-image-number.style.width = schnyder-image-number.naturalWidth + 'px';
+      gwinnett-image-number.style.width = gwinnett-image-number.naturalWidth + 'px';
     };
   </script>
 </body>
